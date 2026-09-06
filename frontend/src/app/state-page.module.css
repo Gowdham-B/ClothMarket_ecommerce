@@ -1,0 +1,8 @@
+.page { padding:38px 0 110px; }
+.title { font-size:clamp(3rem,6.4vw,6rem); margin-bottom:28px; }
+.empty { display:grid; justify-items:center; gap:16px; max-width:650px; margin:36px auto 0; padding:clamp(30px,5vw,56px); text-align:center; background:var(--card); border:1px dashed var(--line); border-radius:4px 28px 4px 28px; }
+.empty h2 { margin:0; font-size:clamp(1.9rem,4vw,2.8rem); }
+.empty p { max-width:470px; margin:0; color:var(--muted); line-height:1.65; }
+.actions { display:flex; flex-wrap:wrap; justify-content:center; gap:11px; margin-top:6px; }
+.actions .button { margin:0; }
+@media (max-width:480px) { .page { padding:28px 0 96px; } .title { font-size:3rem; } .empty { margin-top:24px; padding:30px 22px; } }

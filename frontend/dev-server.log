@@ -1,0 +1,1705 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.18.229.91:3000
+✓ Ready in 459ms
+✓ Running next.config.ts took 45ms
+
+ GET / 200 in 2.5s (next.js: 2.2s, application-code: 231ms)
+ GET / 200 in 57ms (next.js: 5ms, application-code: 51ms)
+[browser] The result of getServerSnapshot should be cached to avoid an infinite loop 
+    at useSavedStore (src/state/useSavedStore.ts:7:69)
+    at ProductCard (src/features/catalog/ProductCard.tsx:5:105)
+  5 | const emit = () => listeners.forEach((listener) => listener());
+  6 | const subscribe = (listener: () => void) => { listeners.add(listener); return () => listeners.delete(listener); };
+> 7 | export function useSavedStore() { const value = useSyncExternalStore(subscribe, () => saved, () => []); return { saved: value, toggle: (id: string) => { saved = saved.includes(id) ? saved.filter((item) => item !== id) : [...saved, ...
+    |                                                                     ^
+  8 | (src/state/useSavedStore.ts:7:69)
+[browser] The result of getServerSnapshot should be cached to avoid an infinite loop 
+    at useSavedStore (src/state/useSavedStore.ts:7:69)
+    at ProductCard (src/features/catalog/ProductCard.tsx:5:105)
+  5 | const emit = () => listeners.forEach((listener) => listener());
+  6 | const subscribe = (listener: () => void) => { listeners.add(listener); return () => listeners.delete(listener); };
+> 7 | export function useSavedStore() { const value = useSyncExternalStore(subscribe, () => saved, () => []); return { saved: value, toggle: (id: string) => { saved = saved.includes(id) ? saved.filter((item) => item !== id) : [...saved, ...
+    |                                                                     ^
+  8 | (src/state/useSavedStore.ts:7:69)
+ GET /search 200 in 196ms (next.js: 173ms, application-code: 23ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 20ms (next.js: 8ms, application-code: 12ms)
+ GET /search 200 in 52ms (next.js: 11ms, application-code: 41ms)
+ GET / 200 in 22ms (next.js: 10ms, application-code: 12ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /saved 200 in 237ms (next.js: 219ms, application-code: 18ms)
+ GET / 200 in 16ms (next.js: 4ms, application-code: 12ms)
+ GET /saved 200 in 21ms (next.js: 5ms, application-code: 16ms)
+ GET /compare 200 in 162ms (next.js: 146ms, application-code: 16ms)
+ GET /account 200 in 147ms (next.js: 131ms, application-code: 17ms)
+✓ Compiled in 60ms
+ GET /account 200 in 52ms (next.js: 7ms, application-code: 45ms)
+ GET /account 200 in 204ms (next.js: 80ms, application-code: 123ms)
+ GET /account 200 in 103ms (next.js: 7ms, application-code: 96ms)
+ GET /account 200 in 101ms (next.js: 8ms, application-code: 93ms)
+ GET /account 200 in 98ms (next.js: 10ms, application-code: 88ms)
+ GET /account 200 in 91ms (next.js: 9ms, application-code: 82ms)
+ GET /account 200 in 85ms (next.js: 7ms, application-code: 78ms)
+ GET /account 200 in 89ms (next.js: 10ms, application-code: 79ms)
+ GET /account 200 in 99ms (next.js: 7ms, application-code: 92ms)
+ GET /account 200 in 90ms (next.js: 7ms, application-code: 82ms)
+ GET /account 200 in 81ms (next.js: 9ms, application-code: 72ms)
+ GET /account 200 in 86ms (next.js: 7ms, application-code: 79ms)
+ GET /account 200 in 92ms (next.js: 6ms, application-code: 86ms)
+ GET /account 200 in 90ms (next.js: 7ms, application-code: 83ms)
+ GET /account 200 in 103ms (next.js: 8ms, application-code: 96ms)
+ GET /account 200 in 106ms (next.js: 16ms, application-code: 91ms)
+ GET /account 200 in 96ms (next.js: 7ms, application-code: 89ms)
+ GET /account 200 in 94ms (next.js: 9ms, application-code: 85ms)
+ GET /account 200 in 51ms (next.js: 8ms, application-code: 43ms)
+ GET /account 200 in 138ms (next.js: 56ms, application-code: 82ms)
+ GET /account 200 in 96ms (next.js: 7ms, application-code: 89ms)
+ GET /account 200 in 91ms (next.js: 8ms, application-code: 83ms)
+ GET /account 200 in 80ms (next.js: 7ms, application-code: 73ms)
+ GET /account 200 in 80ms (next.js: 6ms, application-code: 73ms)
+ GET /account 200 in 88ms (next.js: 6ms, application-code: 82ms)
+ GET /account 200 in 92ms (next.js: 7ms, application-code: 86ms)
+ GET /account 200 in 89ms (next.js: 7ms, application-code: 82ms)
+ GET /account 200 in 90ms (next.js: 6ms, application-code: 84ms)
+ GET /account 200 in 91ms (next.js: 6ms, application-code: 85ms)
+ GET /account 200 in 96ms (next.js: 6ms, application-code: 90ms)
+ GET /account 200 in 96ms (next.js: 6ms, application-code: 91ms)
+ GET /account 200 in 89ms (next.js: 8ms, application-code: 81ms)
+ GET /account 200 in 91ms (next.js: 7ms, application-code: 84ms)
+ GET /account 200 in 92ms (next.js: 7ms, application-code: 85ms)
+ GET /account 200 in 98ms (next.js: 7ms, application-code: 92ms)
+ GET /account 200 in 99ms (next.js: 6ms, application-code: 92ms)
+ GET /account 200 in 96ms (next.js: 7ms, application-code: 89ms)
+ GET /account 200 in 94ms (next.js: 8ms, application-code: 86ms)
+ GET /account 200 in 47ms (next.js: 9ms, application-code: 39ms)
+ GET /account 404 in 259ms (next.js: 206ms, application-code: 53ms)
+ GET /account 404 in 151ms (next.js: 5ms, application-code: 145ms)
+ GET /account 404 in 143ms (next.js: 6ms, application-code: 137ms)
+ GET /account 404 in 142ms (next.js: 91ms, application-code: 50ms)
+ GET /account 404 in 24ms (next.js: 5ms, application-code: 19ms)
+✓ Compiled in 31ms
+ GET /account 200 in 100ms (next.js: 68ms, application-code: 32ms)
+ GET /account 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /account 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /account 200 in 115ms (next.js: 3ms, application-code: 111ms)
+ GET /account 200 in 33ms (next.js: 4ms, application-code: 29ms)
+ GET /account 200 in 129ms (next.js: 74ms, application-code: 55ms)
+ GET /account 200 in 131ms (next.js: 3ms, application-code: 128ms)
+ GET /account 200 in 25ms (next.js: 9ms, application-code: 16ms)
+✓ Compiled in 24ms
+ GET /account 200 in 18ms (next.js: 3ms, application-code: 15ms)
+ GET /account 200 in 32ms (next.js: 3ms, application-code: 29ms)
+ GET / 200 in 25ms (next.js: 13ms, application-code: 12ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+✓ Compiled in 254ms
+ GET / 200 in 62ms (next.js: 49ms, application-code: 12ms)
+✓ Compiled in 134ms
+ GET / 200 in 38ms (next.js: 24ms, application-code: 15ms)
+ GET / 200 in 57ms (next.js: 10ms, application-code: 47ms)
+ GET /search 200 in 28ms (next.js: 15ms, application-code: 13ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /saved 200 in 26ms (next.js: 15ms, application-code: 11ms)
+ GET /compare 200 in 28ms (next.js: 16ms, application-code: 12ms)
+ GET /saved 200 in 16ms (next.js: 4ms, application-code: 12ms)
+ GET /saved 200 in 112ms (next.js: 68ms, application-code: 44ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 37ms (next.js: 4ms, application-code: 33ms)
+ GET /saved 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 35ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 40ms (next.js: 3ms, application-code: 37ms)
+ GET /saved 200 in 39ms (next.js: 3ms, application-code: 36ms)
+ GET /saved 200 in 42ms (next.js: 3ms, application-code: 38ms)
+ GET /saved 200 in 41ms (next.js: 3ms, application-code: 38ms)
+ GET /saved 200 in 38ms (next.js: 3ms, application-code: 35ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 19ms (next.js: 3ms, application-code: 16ms)
+ GET /saved 200 in 100ms (next.js: 53ms, application-code: 47ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 38ms (next.js: 3ms, application-code: 35ms)
+ GET /saved 200 in 40ms (next.js: 3ms, application-code: 38ms)
+ GET /saved 200 in 40ms (next.js: 3ms, application-code: 37ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 38ms (next.js: 3ms, application-code: 35ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 34ms)
+ GET /saved 200 in 36ms (next.js: 3ms, application-code: 32ms)
+ GET /saved 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET /saved 200 in 39ms (next.js: 3ms, application-code: 36ms)
+ GET /saved 200 in 39ms (next.js: 3ms, application-code: 36ms)
+ GET /saved 200 in 39ms (next.js: 7ms, application-code: 32ms)
+ GET /saved 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET /saved 200 in 32ms (next.js: 3ms, application-code: 29ms)
+ GET /saved 200 in 17ms (next.js: 3ms, application-code: 14ms)
+ GET /saved 200 in 96ms (next.js: 3ms, application-code: 93ms)
+ GET / 200 in 20ms (next.js: 8ms, application-code: 11ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 17ms (next.js: 3ms, application-code: 14ms)
+ GET /saved 200 in 15ms (next.js: 3ms, application-code: 12ms)
+ GET /compare 200 in 23ms (next.js: 8ms, application-code: 15ms)
+ GET / 200 in 17ms (next.js: 3ms, application-code: 14ms)
+ GET /account 200 in 28ms (next.js: 15ms, application-code: 13ms)
+ GET /login 200 in 222ms (next.js: 205ms, application-code: 16ms)
+ GET /account 200 in 16ms (next.js: 3ms, application-code: 12ms)
+ GET /saved 200 in 17ms (next.js: 3ms, application-code: 14ms)
+ GET /saved 200 in 182ms (next.js: 66ms, application-code: 116ms)
+ GET / 200 in 26ms (next.js: 13ms, application-code: 13ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /search 200 in 33ms (next.js: 18ms, application-code: 15ms)
+ GET / 200 in 17ms (next.js: 4ms, application-code: 13ms)
+ GET /account 200 in 30ms (next.js: 17ms, application-code: 13ms)
+ GET /compare 200 in 30ms (next.js: 16ms, application-code: 13ms)
+ GET /saved 200 in 16ms (next.js: 3ms, application-code: 13ms)
+ GET /search 200 in 16ms (next.js: 3ms, application-code: 13ms)
+ GET / 200 in 16ms (next.js: 3ms, application-code: 13ms)
+ GET /search?q=Shirts 200 in 16ms (next.js: 3ms, application-code: 12ms)
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:6:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSaved[0m() {
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/features/catalog/ProductCard.tsx:4:1
+Error: Module not found: Can't resolve '@/state/useSavedStore'
+  [90m2 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m3 |[0m [36mimport[0m { [33mProduct[0m, formatPrice } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mProductCard[0m({ product }: { product: [33mProduct[0m }) { [36mconst[0m { saved, toggle } = ...
+  [90m6 |[0m
+
+Import map: aliased to relative './src/state/useSavedStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/features/catalog/ProductCard.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/catalog/ProductCard.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 104ms
+✓ Compiled in 64ms
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/search/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m { [33mSuspense[0m, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { useSearchParams } [36mfrom[0m [32m"next/navigation"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m7 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m8 |[0m [36mimport[0m styles [36mfrom[0m [32m"./search.module.css"[0m;
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/search/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m { [33mSuspense[0m, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { useSearchParams } [36mfrom[0m [32m"next/navigation"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m7 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m8 |[0m [36mimport[0m styles [36mfrom[0m [32m"./search.module.css"[0m;
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/search/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m { [33mSuspense[0m, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { useSearchParams } [36mfrom[0m [32m"next/navigation"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m7 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m8 |[0m [36mimport[0m styles [36mfrom[0m [32m"./search.module.css"[0m;
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/search/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m { [33mSuspense[0m, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { useSearchParams } [36mfrom[0m [32m"next/navigation"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m7 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+  [90m8 |[0m [36mimport[0m styles [36mfrom[0m [32m"./search.module.css"[0m;
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/search/page.tsx [Client Component Browser]
+    ./src/app/search/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/search/page.tsx [Client Component SSR]
+    ./src/app/search/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/saved/page.tsx:5:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m4 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { useSavedStore } [36mfrom[0m [32m"@/state/useSavedStore"[0m;
+  [90m7 |[0m [36mimport[0m styles [36mfrom[0m [32m"../state-page.module.css"[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/saved/page.tsx [Client Component Browser]
+    ./src/app/saved/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/saved/page.tsx [Client Component SSR]
+    ./src/app/saved/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Error: Module not found: Can't resolve '@/features/catalog/ProductCard'
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m5 |[0m [36mimport[0m { products } [36mfrom[0m [32m"@/data/products"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/features/catalog/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mSearchBar[0m } [36mfrom[0m [32m"@/components/SearchBar"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mconst[0m categories = [[32m"Shirts"[0m, [32m"Hoodies"[0m, [32m"Kurtis"[0m, [32m"Denim"[0m, [32m"Sneakers"[0m];
+
+Import map: aliased to relative './src/features/catalog/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 97ms
+✓ Compiled in 73ms
+✓ Compiled in 85ms
+ GET /search?q=Shirts 200 in 157ms (next.js: 58ms, application-code: 98ms)
+ GET / 200 in 26ms (next.js: 13ms, application-code: 13ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /search 200 in 20ms (next.js: 3ms, application-code: 17ms)
+ GET /compare 200 in 27ms (next.js: 14ms, application-code: 13ms)
+ GET /products/indigo-kurti 200 in 683ms (next.js: 658ms, application-code: 24ms)

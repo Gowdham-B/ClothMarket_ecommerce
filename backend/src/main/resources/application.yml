@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: clothmarket-api
+  datasource:
+    url: ${CLOTHMARKET_DB_URL:jdbc:postgresql://localhost:5432/clothmarket}
+    username: ${CLOTHMARKET_DB_USERNAME:clothmarket}
+    password: ${CLOTHMARKET_DB_PASSWORD:clothmarket}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+server:
+  port: ${PORT:8080}

@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: clothmarket
+      POSTGRES_USER: clothmarket
+      POSTGRES_PASSWORD: clothmarket
+    ports:
+      - "5432:5432"
+    volumes:
+      - clothmarket-postgres:/var/lib/postgresql/data
+volumes:
+  clothmarket-postgres:
