@@ -1,6 +1,12 @@
 spring:
   application:
     name: clothmarket-api
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
+      - org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
+      - org.springframework.boot.data.jpa.autoconfigure.DataJpaRepositoriesAutoConfiguration
+      - org.springframework.boot.flyway.autoconfigure.FlywayAutoConfiguration
   datasource:
     url: ${CLOTHMARKET_DB_URL:jdbc:postgresql://localhost:5432/clothmarket}
     username: ${CLOTHMARKET_DB_USERNAME:clothmarket}

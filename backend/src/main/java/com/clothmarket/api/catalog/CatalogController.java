@@ -16,5 +16,5 @@ public class CatalogController {
     @GetMapping("/products") public List<ProductSummary> products(@RequestParam(required = false) String q) { return adapter.search(q); }
     @GetMapping("/search") public List<ProductSummary> search(@RequestParam String q) { return adapter.search(q); }
     @GetMapping("/products/{id}") public ResponseEntity<ProductSummary> product(@PathVariable String id) { return adapter.search("").stream().filter(product -> product.id().equals(id)).findFirst().map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build()); }
-    @GetMapping("/platforms") public List<String> platforms() { return List.of("AJIO", "Amazon", "Flipkart", "Meesho", "Myntra", "Nike"); }
+    @GetMapping("/platforms") public List<String> platforms() { return List.of("AJIO", "Amazon", "Flipkart", "Meesho", "Myntra", "Nike", "Trends"); }
 }
