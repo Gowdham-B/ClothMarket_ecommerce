@@ -160,16 +160,16 @@ export default function Home() {
               href={`/search?q=${encodeURIComponent(cat.query)}`}
               className="category-card"
             >
-              <img
-                src={cat.image}
-                alt={cat.name}
-                className="category-card-bg"
-                loading="lazy"
-              />
-              <div className="category-card-overlay" />
-              <div className="category-card-content">
+              <div className="category-card-thumb">
+                <img
+                  src={cat.image}
+                  alt={cat.name}
+                  loading="lazy"
+                />
+              </div>
+              <div className="category-card-info">
                 <h4>{cat.name}</h4>
-                <span>Explore Deals ↗</span>
+                <span className="category-card-arrow" aria-hidden>→</span>
               </div>
             </Link>
           ))}
@@ -583,82 +583,79 @@ export default function Home() {
         .categories-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
+          gap: 14px;
         }
 
         .category-card {
-          position: relative;
-          aspect-ratio: 4 / 3;
-          border-radius: 10px;
-          overflow: hidden;
           display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          padding: 14px;
-          text-decoration: none;
+          align-items: center;
+          gap: 14px;
+          padding: 14px 16px;
+          background: var(--card);
           border: 1px solid var(--line);
-          background: #e9e4d9;
-          transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+          border-radius: 12px;
+          text-decoration: none;
+          transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
         }
 
         .category-card:hover {
-          transform: translateY(-3px);
+          transform: translateY(-2px);
           box-shadow: var(--shadow-md);
           border-color: var(--pine);
         }
 
-        .category-card-bg {
-          position: absolute;
-          inset: 0;
+        .category-card-thumb {
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          overflow: hidden;
+          flex-shrink: 0;
+          border: 2px solid var(--line);
+          transition: border-color 0.2s ease;
+        }
+
+        .category-card:hover .category-card-thumb {
+          border-color: var(--pine);
+        }
+
+        .category-card-thumb img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform 0.4s ease;
-          z-index: 1;
+          transition: transform 0.35s ease;
         }
 
-        .category-card:hover .category-card-bg {
-          transform: scale(1.06);
+        .category-card:hover .category-card-thumb img {
+          transform: scale(1.1);
         }
 
-        .category-card-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(180deg, rgba(20, 30, 25, 0.05) 0%, rgba(15, 25, 20, 0.75) 100%);
-          z-index: 2;
-          transition: background 0.25s ease;
+        .category-card-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex: 1;
+          min-width: 0;
         }
 
-        .category-card:hover .category-card-overlay {
-          background: linear-gradient(180deg, rgba(20, 30, 25, 0.02) 0%, rgba(15, 25, 20, 0.85) 100%);
-        }
-
-        .category-card-content {
-          position: relative;
-          z-index: 3;
-          color: #ffffff;
-        }
-
-        .category-card-content h4 {
+        .category-card-info h4 {
           margin: 0;
           font-family: var(--serif);
-          font-size: 1.15rem;
+          font-size: 1rem;
           font-weight: 600;
-          color: #ffffff;
+          color: var(--ink);
           letter-spacing: -0.01em;
         }
 
-        .category-card-content span {
-          display: inline-block;
-          font-size: 0.72rem;
-          color: #d1ded5;
-          font-weight: 500;
-          margin-top: 3px;
-          transition: color 0.15s ease;
+        .category-card-arrow {
+          font-size: 1rem;
+          color: var(--muted);
+          transition: color 0.15s ease, transform 0.15s ease;
+          flex-shrink: 0;
         }
 
-        .category-card:hover .category-card-content span {
-          color: #f7e6b5;
+        .category-card:hover .category-card-arrow {
+          color: var(--pine);
+          transform: translateX(3px);
         }
 
         @media (max-width: 900px) {
@@ -674,10 +671,15 @@ export default function Home() {
             gap: 10px;
           }
           .category-card {
-            padding: 12px;
+            padding: 12px 14px;
+            gap: 12px;
           }
-          .category-card-content h4 {
-            font-size: 1rem;
+          .category-card-thumb {
+            width: 44px;
+            height: 44px;
+          }
+          .category-card-info h4 {
+            font-size: 0.92rem;
           }
         }
 

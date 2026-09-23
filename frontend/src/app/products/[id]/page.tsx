@@ -46,7 +46,8 @@ export default function ProductPage() {
       setAlertTargetPrice(Math.round(product.price * 0.9));
       addViewed(product.id);
     }
-  }, [product, addViewed]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product?.id]);
 
   if (!product) notFound();
 

@@ -126,13 +126,14 @@ export function Header() {
           flex-direction: row;
           align-items: center;
           gap: 10px;
-          padding: 6px 14px 6px 7px;
+          padding: 5px 14px 5px 6px;
           border-radius: 999px;
           background: #ffffff;
           border: 1px solid var(--line);
           box-shadow: 0 1px 4px rgba(27, 61, 48, 0.04);
           transition: all 0.15s ease;
           text-decoration: none;
+          line-height: 1;
         }
 
         .account-pill:hover {
@@ -142,15 +143,15 @@ export function Header() {
         }
 
         .account-avatar {
-          width: 28px;
-          height: 28px;
+          width: 30px;
+          height: 30px;
           border-radius: 50%;
           background: var(--pine);
           color: #ffffff;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          font-size: 0.8rem;
+          font-size: 0.82rem;
           font-weight: 800;
           line-height: 1;
           flex-shrink: 0;
@@ -158,7 +159,7 @@ export function Header() {
 
         .account-username {
           font-size: 0.84rem;
-          font-weight: 700;
+          font-weight: 600;
           color: var(--ink);
           letter-spacing: -0.01em;
           line-height: 1;
@@ -173,8 +174,8 @@ export function Header() {
             display: none;
           }
           .account-pill {
-            padding: 4px 10px 4px 5px;
-            gap: 6px;
+            padding: 4px 10px 4px 4px;
+            gap: 8px;
           }
           .account-avatar {
             width: 26px;
